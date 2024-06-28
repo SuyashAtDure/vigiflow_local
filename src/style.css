@@ -1,0 +1,608 @@
+/* OpenDashboard UI start */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--body-main-gray-color) !important;
+}
+
+/* Let's get this started */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(51, 63, 80, 0.8);
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); */
+}
+
+/* common css */
+.p-20px {
+  padding: 20px !important;
+}
+
+.pr-0px {
+  padding-right: 0px !important
+}
+
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+.mx-3 {
+  margin-left: 1rem !important
+}
+
+.pb-3,
+.py-3 {
+
+  padding-bottom: 1rem !important;
+
+}
+
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mx-10px {
+  margin-left: 10px;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.loader{
+  justify-content: center;
+}
+
+.form-control {
+  background-color: var(--primary-gray-bg-color) !important;
+  border-color: var(--primary-gray-bg-color) !important;
+  color: var(--primary-black-color);
+}
+
+label.text-white,
+label {
+  color: var(--primary-black-color) !important;
+}
+
+/* highCharts ui */
+.highcharts-background {
+  background-color: transparent;
+  fill: transparent;
+}
+
+.highcharts-axis-title,
+.highcharts-axis-labels,
+.highcharts-axis-labels text,
+.highcharts-legend-item text,
+.highcharts-data-label {
+  color: var(--primary-black-color);
+  fill: var(--primary-black-color);
+  font-family: "Manrope", sans-serif !important;
+}
+
+.openDashboard-section .highcharts-exporting-group {
+  cursor: pointer;
+}
+
+.card-body .chart-wrapper .highcharts-background {
+  height: 800px !important;
+}
+
+/* main css */
+.openDashboard-section .card-header {
+  border-radius: 0% !important;
+  font-family: "Manrope", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.openDashboard-section .card {
+  background-color: var(--main-white-color);
+  -webkit-box-shadow: 0 15px 50px rgba(160, 163, 189, .1);
+  box-shadow: 0 15px 50px rgba(160, 163, 189, .1) !important;
+  border-radius: 10px;
+  border-color: transparent !important;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+
+.openDashboard-section .indic-img {
+  background-color: var(--contrast-gray-bg-color);
+  border-radius: 50%;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+
+}
+
+.openDashboard-section .indic-img img {
+  padding: 14px;
+  width: 60px;
+  height: 60px;
+}
+
+.openDashboard-section .stat-cards-info__num {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.22;
+  color: var(--primary-black-color);
+  margin-bottom: 4px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.openDashboard-section .indicator-section span {
+  font-size: 10px !important;
+  color: var(--primary-black-color) !important;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.openDashboard-section .stat-cards-info__title {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.22;
+  color: var(--main-gray-color);
+  margin-bottom: 0px;
+  text-align: center;
+  /* margin-top: 14px; */
+}
+
+.openDashboard-section .indicator-section {
+  /* display: grid; */
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* fix text color */
+.openDashboard-section .indicator-section .blue-indic {
+  color: #3fe0c1 !important;
+}
+
+.openDashboard-section .indicator-section .green-indic {
+  color: #4fba6f !important;
+}
+
+.openDashboard-section .indicator-section .red-indic {
+  color: #ff5245 !important;
+}
+
+.openDashboard-section .chart-section .card.bg-darkblue {
+  background-color: var(--main-white-color) !important;
+  box-shadow: none !important;
+  /* border: 1px solid #707070 !important; */
+  margin-bottom: 0px;
+}
+
+.openDashboard-section .chart-section .card.bg-darkblue .card-body {
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.openDashboard-section .chart-section h5 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary-black-color);
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+/* .openDashboard-section .pie-chart .card.bg-darkblue {
+  border: 1px solid #ddd !important;
+} */
+
+.openDashboard-section .chart-section .pie-card .card.bg-darkblue .card-body {
+  padding-top: 0px !important;
+}
+
+.openDashboard-section .pie-card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.openDashboard-section .pie-heading {
+  background-color: var(--secondary-gray-bg-color) !important;
+  color: var(--primary-black-color) !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  /* text-transform: capitalize; */
+
+}
+
+/* sidebar ui */
+
+.openDashboard-section .sidepanel {
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  height: 100%;
+  display: block;
+  right: 0;
+  top: 75px;
+  bottom: 0;
+  width: 0;
+  height: 100vh;
+  min-height: 100%;
+  background: var(--main-white-color);
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.openDashboard-section .sidepanel label {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.openDashboard-section .sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--main-gray-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.openDashboard-section .sidepanel a:hover {
+  color: var(--main-gray-color);
+}
+
+.openDashboard-section .sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* .openDashboard-section .openbtn,
+.openDashboard-section .openbtn.active {
+  cursor: pointer;
+  background-color:  var(--button-primary-color) !important;
+  padding: 8px 15px;
+  border: 1px solid  var(--button-primary-color) !important;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  border-radius: 6px;
+  color: var(--main-white-color) !important;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.openDashboard-section .openbtn:hover {
+  background-color: var(--button-primary-color) !important;
+  color: #000 !important;
+} */
+
+.openDashboard-section .sidebar-inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  /* height: calc(100vh + 45px); */
+}
+
+.openDashboard-section .filter-button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /* margin-top: 12px; */
+}
+
+.openDashboard-section .apply-btn {
+  background-color: var(--button-secondary-color) !important;
+  border-color: var(--button-secondary-color) !important;
+  box-shadow: none !important;
+}
+
+.openDashboard-section .pie-donutchart .h-0px {
+  height: 0px !important;
+}
+
+.openDashboard-section .date-input {
+  box-shadow: none !important;
+}
+
+/* header css */
+.openDashboard-section .main-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.openDashboard-section .heading-div{
+  color: rgba(0, 0, 0, .85) !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.openDashboard-section .main-logo{
+  max-width: 75px;
+  max-height: 35px;
+}
+
+.openDashboard-section .chart-section{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.chart-wrapper,
+.chart-wrapper svg {
+  width: 100%;
+}
+
+/* other ui */
+.css-1dimb5e-singleValue {
+  color: var(--primary-black-color) !important;
+
+}
+
+.css-13cymwt-control {
+  background-color: var(--primary-gray-bg-color) !important;
+  border-color: var(--primary-gray-bg-color) !important;
+  border-radius: 8px !important;
+}
+
+.sidepanelWrapper{
+  /* width: fit-content !important; */
+  /* margin-left: auto !important; */
+  padding: 0px !important;
+}
+
+.sidebarCanvas{
+  width: 300px !important;
+  font-size: 14px;
+}
+
+.mgt-5{
+  margin-top: 5px;
+}
+
+.swithcBtn{
+  display: flex;
+justify-content: space-between
+}
+
+.swithcBtn > div {
+  margin-left: 30px;
+}
+
+.form-check-input:checked{
+  background-color: #a9d18e !important;
+    border-color: #a9d18e !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:focus{
+  border-color: #a9d18e !important;
+  box-shadow: none !important;
+}
+
+/* responsive UI  */
+
+@media (min-width:320px) and (max-width:767px){
+  .openDashboard-section .indicator-section{
+    flex-direction: column;
+  }
+
+  .openDashboard-section .indicator-section .col{
+    width: 100%;
+  }
+
+  .openDashboard-section .main-logo{
+    max-width: 70px;
+  }
+
+  nav .mx-5{
+    margin-right: 0rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .openDashboard-section .heading-div{
+    font-size: 14px !important;
+  }
+
+  .openDashboard-section .filter-button{
+    margin-top: 0px !important;
+  }
+
+  .openDashboard-section .filter-button span{
+    display: none;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .openDashboard-section .indicator-section.row-cols-5 .col{
+    width: 50%;
+  }
+}
+
+.highcharts-title {
+    font-family: Manrope, sans-serif !important;
+    color: var(--secondary-black-color) !important;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 800 !important;
+    line-height: 22px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+  .filter-button, .mr-2 {
+    font-family: Manrope, sans-serif !important;
+  }
+  
+  /* In your CSS file or a <style> tag */
+.highcharts-exporting-buttons text, 
+.highcharts-contextmenu-item {
+  font-family: 'Manrope, sans-serif' !important;
+}
+
+.navbar {
+  padding: 0.5rem 0rem !important;
+}
+
+.css-b62m3t-container {
+  padding-right: 5px;
+}
+
+/* Custom Modal Styles */
+.custom-modal .modal-content {
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 15px; /* Rounded corners */
+  font-family: 'Manrope', sans-serif; /* Manrope font-family */
+  border: none; /* Remove border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.custom-modal .modal-header {
+  border-bottom: none; /* Remove bottom border */
+}
+
+.custom-modal .modal-title {
+  color: #343a40; /* Dark grey color for title */
+  font-size: 1.5em; /* Larger font size for title */
+  font-weight: bold; /* Bold font */
+}
+
+.custom-modal .modal-body {
+  color: #495057; /* Darker grey color for body text */
+  font-size: 1.1em; /* Slightly larger font size */
+}
+
+.custom-modal .modal-footer {
+  border-top: none; /* Remove top border */
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center align buttons */
+  gap: 20px; /* Space between buttons */
+}
+
+.custom-modal .btn-secondary {
+  background-color: #6c757d; /* Custom grey color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Custom padding */
+  font-size: 1em; /* Standard font size */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.custom-modal .btn-danger {
+  background-color: #dc3545; /* Custom red color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Custom padding */
+  font-size: 1em; /* Standard font size */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.custom-modal .btn:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Add animation for modal appearance */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-modal .modal-dialog {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite; /* CSS animation for spinning */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.upload_page {
+  font-family: "Manrope", sans-serif !important;
+}
+
+.scrollable-content {
+  max-height: 335px;
+  overflow-y: auto;
+}
+
+
+
+/* .openDashboard-section .pie-donutchart .highcharts-container svg,
+  .openDashboard-section .pie-donutchart .highcharts-container
+  {
+    max-height: 290px !important;
+    height: 100%;
+  } */
+/* OpenDashboard UI end */

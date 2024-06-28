@@ -1,0 +1,18 @@
+body{
+    --main-white-color:#fff;
+    --border-color:#dee2e6;
+    --body-main-gray-color: #f2f2f3;
+
+    --primary-gray-bg-color:#f1f3f6;
+    --secondary-gray-bg-color:#faf9fd;
+    --contrast-gray-bg-color:#2f49d11a;
+
+    --primary-black-color:#171717;
+    --secondary-black-color:#1f1f1f;
+    --main-gray-color:#505050;
+    
+    --button-primary-color:#EA2C51;
+    --button-secondary-color:#2E75B6;
+
+    --header-red-bg-color:#ff0202;
+}

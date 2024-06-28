@@ -1,0 +1,1 @@
+// export const getChartData = 'https://apps.duredemos.com/vigiflow/Charts';
